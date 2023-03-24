@@ -1,0 +1,11 @@
+{
+  "short_name": "maulhardt-save",
+  "name": "maulhardt-save",
+  "icons": [],
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "orientation": "portrait-primary",
+  "description": "Restorarion of uni help material from Martin Maulhardt"
+}

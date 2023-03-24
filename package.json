@@ -1,0 +1,40 @@
+{
+    "homepage": "http://gabrieldiem.github.io/maulhardt-save",
+    "name": "maulhardt-save",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "bootstrap": "^5.2.3",
+        "dotenv": "^16.0.3",
+        "live-server": "^1.2.2",
+        "parcel": "^2.8.2",
+        "popper.js": "^1.16.1",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-router-dom": "^6.8.0"
+    },
+    "scripts": {
+        "clean": "rm -rf ./dist && echo 'Cleaned old dist directory'",
+        "clean-local": "rm -rf ./dist-local && echo 'Cleaned old dist-local directory'",
+        "dev": "npm run clean-local && parcel src/index.html src/404.html --dist-dir dist-local",
+        "build": "npm run clean && parcel build src/index.html src/404.html --public-url /Portfolio_like_project/",
+        "build-local": "npm run clean-local && parcel build src/index.html src/404.html --dist-dir dist-local",
+        "start": "npm run build-local && live-server dist-local",
+        "serve-local": "npm run build-local && http-server ./dist-local -p 3000",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d dist"
+    },
+    "devDependencies": {
+        "@parcel/packager-raw-url": "^2.8.2",
+        "@parcel/transformer-sass": "^2.8.2",
+        "@parcel/transformer-webmanifest": "^2.8.2",
+        "eslint": "^8.33.0",
+        "eslint-config-standard": "^17.0.0",
+        "eslint-plugin-html": "^7.1.0",
+        "eslint-plugin-react": "^7.32.2",
+        "gh-pages": "^5.0.0",
+        "os-browserify": "^0.3.0",
+        "path-browserify": "^1.0.1",
+        "process": "^0.11.10"
+    }
+}

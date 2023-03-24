@@ -1,0 +1,56 @@
+.banner-container--header-am2 {
+  display: block;
+  text-align: center;
+  margin: 5px 0px 15px 0px;
+}
+
+.container-fluid {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar--header-am2 button:focus, button:hover {
+  box-shadow: none;
+}
+
+.inner-button--header-am2 {
+  color: black;
+  font-weight: 400 !important;
+}
+
+.navbar--header-am2 .dropdown-menu {
+  border-radius: 0px;
+  padding: 0px;
+  box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.33);
+  -webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.33);
+  -moz-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.33);
+  border-width: 0px;
+  border-top: 2px solid black;
+}
+
+.navbar--header-am2 .dropdown-menu .dropdown-item {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  word-spacing: 2px;
+}
+
+.navbar--header-am2 .dropdown-menu .dropdown-item:hover {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  word-spacing: 2px;
+  background-color: black;
+  color: white
+}
+
+.navbar-toggler-icon {
+     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+.navbar-toggler {
+  border-width: 0px !important;
+}
+
+.hr--header-am2 {
+  margin: 0px;
+}
