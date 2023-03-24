@@ -17,7 +17,7 @@
         "clean": "rm -rf ./dist && echo 'Cleaned old dist directory'",
         "clean-local": "rm -rf ./dist-local && echo 'Cleaned old dist-local directory'",
         "dev": "npm run clean-local && parcel src/index.html src/404.html --dist-dir dist-local",
-        "build": "npm run clean && parcel build src/index.html src/404.html --public-url /Portfolio_like_project/",
+        "build": "npm run clean && parcel build src/index.html src/404.html --public-url /maulhardt-restoration/",
         "build-local": "npm run clean-local && parcel build src/index.html src/404.html --dist-dir dist-local",
         "start": "npm run build-local && live-server dist-local",
         "serve-local": "npm run build-local && http-server ./dist-local -p 3000",
