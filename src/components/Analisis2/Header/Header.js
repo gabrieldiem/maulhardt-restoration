@@ -1,4 +1,5 @@
 import { React } from 'react';
+import { Link } from 'react-router-dom';
 
 import './Header.css';
 import baseRelativePath from '../../../path';
@@ -14,9 +15,7 @@ const ejercicios = ['EJERCICIOS UNIDADES 1-5', 'EJERCICIOS UNIDADES 6-11'];
 const Header = () => {
   return <>
     <div className="container-fluid banner-container--header-am2">
-      <a className="navbar-brand" href={`${baseRelativePath}/analisis-2`}>
-        <img src={analisis2Banner} />
-      </a>
+      <Link className="navbar-brand" to={`${baseRelativePath}/analisis-2`}><img src={analisis2Banner} /></Link>
     </div>
     <hr className="hr--header-am2" />
     <nav className="navbar--header-am2 navbar navbar-expand-lg justify-content-center">
@@ -30,38 +29,38 @@ const Header = () => {
         <div className="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
           <ul className="navbar-nav justify-content-center">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href={`${baseRelativePath}/analisis-2`}>INICIO</a>
+              <Link className="nav-link active" aria-current="page" to={`${baseRelativePath}/analisis-2`}>INICIO</Link>
             </li>
             <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            VIDEOS
-              </a>
+              <Link className="nav-link dropdown-toggle" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              VIDEOS
+              </Link>
               <ul className="dropdown-menu">
                 {videos.map((video, index) => {
                   return <>
                     <li key={index + 1}>
-                      <a className="dropdown-item" href="#">{index + 1}. {video}</a>
+                      <Link className="dropdown-item" to="#">{index + 1}. {video}</Link>
                     </li>
                   </>;
                 })}
               </ul>
             </li>
             <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            EJERCICIOS
-              </a>
+              <Link className="nav-link dropdown-toggle" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                EJERCICIOS
+              </Link>
               <ul className="dropdown-menu">
                 {ejercicios.map((ejercicio, index) => {
                   return <>
                     <li key={index}>
-                      <a className="dropdown-item" href="#">{ejercicio}</a>
+                      <Link className="dropdown-item" to="#">{ejercicio}</Link>
                     </li>
                   </>;
                 })}
               </ul>
             </li>
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">LIBRO DE VISITAS</a>
+              <Link className="nav-link active" aria-current="page" to="#">LIBRO DE VISITAS</Link>
             </li>
           </ul>
         </div>
