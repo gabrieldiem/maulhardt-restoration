@@ -43,7 +43,7 @@ if (currentPageState && currentPageState.isAPage) {
   }
 
   newUrl += currentLocation.pathname.split('/').slice(0, 1 + pathSegmentsToKeep) + `${baseRelativePath}/pages/${currentPageState.currentPage}.html` + '/?/';
-  newUrl += currentLocation.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~').split(`${currentPageState.currentPage}/`)[1];
+  newUrl += currentLocation.pathname.slice(1).split('/').slice((baseRelativePath === '') ? 0 : 1).join('/').replace(/&/g, '~and~').split(`${currentPageState.currentPage}/`)[1];
 
   if (currentLocation.search) {
     newUrl += '&' + currentLocation.search.slice(1).replace(/&/g, '~and~');
