@@ -1,0 +1,2 @@
+var a="localhost"!==window.location.hostname&&!window.location.href.includes("127.0.0.1")?"/maulhardt-restoration":"";var o=["analisis-2","analisis-3","matematica-discreta"];const e=window.location.href;let i=null;o.forEach((o=>{e.includes(`${a}/pages/${o}`)&&(i={isAPage:!0,currentPage:o})})),i&&i.isAPage?window.location.replace(`${a}/pages/${i.currentPage}.html`):window.location.replace(`${a}/`);
+//# sourceMappingURL=404.abb1803a.js.map

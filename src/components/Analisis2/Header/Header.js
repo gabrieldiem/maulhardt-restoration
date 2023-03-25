@@ -3,19 +3,19 @@ import { Link } from 'react-router-dom';
 
 import './Header.css';
 import baseRelativePath from '../../../path';
+import pageRedirector from '../../../redirector';
 
 import analisis2Banner from '../../../assets/analisis2/analisis2_banner.jpg';
+import { videos, ejercicios } from '../../../data/analisis-2-data';
 
-const videos = ['GEOMETRÍA DEL PLANO Y DEL ESPACIO', 'FUNCIONES. LÍMITES. CONTINUIDAD', 'DIFERENCIABILIDAD. SUPERFICIES', 'FUNCIONES COMPUESTAS E IMPLÍCITAS',
-  'POLINOMIO DE TAYLOR. EXTREMOS', 'ECUACIONES DIFERENCIALES', 'INTEGRALES CURVILINEAS', 'INTEGRALES MULTIPLES', 'INTEGRALES DE SUPERFICIE - FLUJO', 'TEOREMAS INTEGRALES',
-  'ECUACIONES DIFERENCIALES (II)'];
-
-const ejercicios = ['EJERCICIOS UNIDADES 1-5', 'EJERCICIOS UNIDADES 6-11'];
+// const videos = ['GEOMETRÍA DEL PLANO Y DEL ESPACIO', 'FUNCIONES. LÍMITES. CONTINUIDAD', 'DIFERENCIABILIDAD. SUPERFICIES', 'FUNCIONES COMPUESTAS E IMPLÍCITAS',
+//   'POLINOMIO DE TAYLOR. EXTREMOS', 'ECUACIONES DIFERENCIALES', 'INTEGRALES CURVILINEAS', 'INTEGRALES MULTIPLES', 'INTEGRALES DE SUPERFICIE - FLUJO', 'TEOREMAS INTEGRALES',
+//   'ECUACIONES DIFERENCIALES (II)'];
 
 const Header = () => {
   return <>
     <div className="container-fluid banner-container--header-am2">
-      <Link className="navbar-brand" to={`${baseRelativePath}/analisis-2`}><img src={analisis2Banner} /></Link>
+      <Link className="navbar-brand" to={`${baseRelativePath}/${pageRedirector('analisis-2', window.location.href)}`}><img src={analisis2Banner} /></Link>
     </div>
     <hr className="hr--header-am2" />
     <nav className="navbar--header-am2 navbar navbar-expand-lg justify-content-center">
@@ -29,7 +29,9 @@ const Header = () => {
         <div className="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
           <ul className="navbar-nav justify-content-center">
             <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" to={`${baseRelativePath}/analisis-2`}>INICIO</Link>
+              <Link className="nav-link active" aria-current="page" to={`${baseRelativePath}/${pageRedirector('analisis-2', window.location.href)}`}>
+                INICIO
+              </Link>
             </li>
             <li className="nav-item dropdown">
               <Link className="nav-link dropdown-toggle" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -39,7 +41,7 @@ const Header = () => {
                 {videos.map((video, index) => {
                   return <>
                     <li key={index + 1}>
-                      <Link className="dropdown-item" to="#">{index + 1}. {video}</Link>
+                      <Link className="dropdown-item" to={video[1]}>{index + 1}. {video[0]}</Link>
                     </li>
                   </>;
                 })}
@@ -53,7 +55,7 @@ const Header = () => {
                 {ejercicios.map((ejercicio, index) => {
                   return <>
                     <li key={index}>
-                      <Link className="dropdown-item" to="#">{ejercicio}</Link>
+                      <Link className="dropdown-item" to={ejercicio[1]}>{ejercicio[0]}</Link>
                     </li>
                   </>;
                 })}

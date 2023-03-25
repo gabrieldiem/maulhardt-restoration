@@ -16,9 +16,9 @@
     "scripts": {
         "clean": "rm -rf ./dist && echo 'Cleaned old dist directory'",
         "clean-local": "rm -rf ./dist-local && echo 'Cleaned old dist-local directory'",
-        "dev": "npm run clean-local && parcel src/index.html src/404.html --dist-dir dist-local",
-        "build": "npm run clean && parcel build src/index.html src/404.html --public-url /maulhardt-restoration/",
-        "build-local": "npm run clean-local && parcel build src/index.html src/404.html --dist-dir dist-local",
+        "dev": "npm run clean-local && parcel src/index.html src/404.html src/pages/analisis-2.html src/pages/analisis-3.html src/pages/matematica-discreta.html --dist-dir dist-local",
+        "build": "npm run clean && parcel build src/index.html src/404.html src/pages/analisis-2.html src/pages/analisis-3.html src/pages/matematica-discreta.html --public-url /maulhardt-restoration/",
+        "build-local": "npm run clean-local && parcel build src/index.html src/404.html src/pages/analisis-2.html src/pages/analisis-3.html src/pages/matematica-discreta.html --dist-dir dist-local",
         "start": "npm run build-local && live-server dist-local",
         "serve-local": "npm run build-local && http-server ./dist-local -p 3000",
         "predeploy": "npm run build",
