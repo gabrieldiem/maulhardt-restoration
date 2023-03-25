@@ -42,7 +42,7 @@ if (currentPageState && currentPageState.isAPage) {
     newUrl += ':' + currentLocation.port;
   }
 
-  newUrl += '/' + currentLocation.pathname.split('/').slice(0, 1 + pathSegmentsToKeep)[pathSegmentsToKeep] + `pages/${currentPageState.currentPage}.html` + '/?/';
+  newUrl += '/' + currentLocation.pathname.split('/').slice(0, 1 + pathSegmentsToKeep)[pathSegmentsToKeep] + ((baseRelativePath === '') ? '' : '/') + `pages/${currentPageState.currentPage}.html` + '/?/';
   newUrl += currentLocation.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~').split(`${currentPageState.currentPage}/`)[1];
   console.log('NEW', newUrl);
   // Redirect the browser to the new URL
