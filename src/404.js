@@ -23,7 +23,7 @@ let currentPageState = null;
 // https://username.github.io/repo-name/?/one/two&a=b~and~c=d#qwe
 // Otherwise, leave pathSegmentsToKeep as 0.
 // Define the number of path segments to keep
-const pathSegmentsToKeep = 0;
+const pathSegmentsToKeep = (baseRelativePath === '') ? 0 : 1;
 
 // Get the current location of the page
 const currentLocation = window.location;
@@ -42,15 +42,9 @@ if (currentPageState && currentPageState.isAPage) {
     newUrl += ':' + currentLocation.port;
   }
 
-  newUrl += currentLocation.pathname.split('/').slice(0, 1 + pathSegmentsToKeep) + `${baseRelativePath}/pages/${currentPageState.currentPage}.html` + '/?/';
-  newUrl += currentLocation.pathname.slice(1).split('/').slice((baseRelativePath === '') ? 0 : 1).join('/').replace(/&/g, '~and~').split(`${currentPageState.currentPage}/`)[1];
-
-  if (currentLocation.search) {
-    newUrl += '&' + currentLocation.search.slice(1).replace(/&/g, '~and~');
-  }
-
-  newUrl += currentLocation.hash;
-
+  newUrl += '/' + currentLocation.pathname.split('/').slice(0, 1 + pathSegmentsToKeep)[pathSegmentsToKeep] + `pages/${currentPageState.currentPage}.html` + '/?/';
+  newUrl += currentLocation.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~').split(`${currentPageState.currentPage}/`)[1];
+  console.log('NEW', newUrl);
   // Redirect the browser to the new URL
   currentLocation.replace(newUrl);
 } else {
