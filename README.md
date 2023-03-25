@@ -1,6 +1,7 @@
 # Maulhardt Restoration Project
 
-Link to this website: https://gabrieldiem.github.io/maulhardt-restoration/
+Link to Análisis 2 website: https://gabrieldiem.github.io/maulhardt-restoration/pages/analisis-2
+Link to root website: https://gabrieldiem.github.io/maulhardt-restoration/
 
 The objective of this project is to restore a working copy of the webpages made by Martin Maulhardt, with the sole purpose of them being available to students.
 
