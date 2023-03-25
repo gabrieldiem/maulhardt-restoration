@@ -1,15 +1,47 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Análisis 2</title>
     <meta name="robots" content="max-image-preview:large" />
-    <link rel="icon" type="image/x-icon" href="../assets/favicon/favicon-am2.jpg">
-</head>
-<body>
+    <link rel="icon" type="image/x-icon" href="../assets/favicon/favicon-am2.jpg" />
+
+    <script type="text/javascript">
+      // Single Page Apps for GitHub Pages
+      // MIT License
+      // https://github.com/rafgraph/spa-github-pages
+      // This script checks to see if a redirect is present in the query string,
+      // converts it back into the correct url and adds it to the
+      // browser's history using window.history.replaceState(...),
+      // which won't cause the browser to attempt to load the new url.
+      // When the single page app is loaded further down in this file,
+      // the correct url will be waiting in the browser's history for
+      // the single page app to route accordingly.
+      (function () {
+        // Get the current location of the page
+        const currentLocation = window.location;
+
+        // Check if there is a redirect in the query string
+        if (currentLocation.search[1] === '/') {
+          // Decode the redirect in the query string and replace "~and~" with "&"
+          const decodedRedirect = currentLocation.search
+            .slice(1)
+            .split('&')
+            .map(function (str) {
+              return str.replace(/~and~/g, '&');
+            })
+            .join('?');
+
+          // Replace the current state in the browser history with the decoded redirect
+          window.history.replaceState(null, null, currentLocation.pathname.slice(0, -1) + decodedRedirect + currentLocation.hash);
+        }
+      })();
+    </script>
+  </head>
+  <body>
     <div id="root"></div>
     <script src="analisis-2.js" type="module"></script>
-</body>
+  </body>
 </html>
