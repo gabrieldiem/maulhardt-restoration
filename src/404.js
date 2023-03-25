@@ -38,11 +38,11 @@ if (currentPageState && currentPageState.isAPage) {
   // Build the new URL
   let newUrl = currentLocation.protocol + '//';
   newUrl += currentLocation.hostname;
-  if (currentLocation.port) {
+  if (currentLocation.port && currentLocation.port !== '') {
     newUrl += ':' + currentLocation.port;
   }
 
-  newUrl += currentLocation.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + `${baseRelativePath}/pages/${currentPageState.currentPage}.html` + '/?/';
+  newUrl += currentLocation.pathname.split('/').slice(0, 1 + pathSegmentsToKeep) + `${baseRelativePath}/pages/${currentPageState.currentPage}.html` + '/?/';
   newUrl += currentLocation.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~').split(`${currentPageState.currentPage}/`)[1];
 
   if (currentLocation.search) {
