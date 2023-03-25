@@ -8,10 +8,6 @@ import pageRedirector from '../../../redirector';
 import analisis2Banner from '../../../assets/analisis2/analisis2_banner.jpg';
 import { videos, ejercicios } from '../../../data/analisis-2-data';
 
-// const videos = ['GEOMETRÍA DEL PLANO Y DEL ESPACIO', 'FUNCIONES. LÍMITES. CONTINUIDAD', 'DIFERENCIABILIDAD. SUPERFICIES', 'FUNCIONES COMPUESTAS E IMPLÍCITAS',
-//   'POLINOMIO DE TAYLOR. EXTREMOS', 'ECUACIONES DIFERENCIALES', 'INTEGRALES CURVILINEAS', 'INTEGRALES MULTIPLES', 'INTEGRALES DE SUPERFICIE - FLUJO', 'TEOREMAS INTEGRALES',
-//   'ECUACIONES DIFERENCIALES (II)'];
-
 const Header = () => {
   return <>
     <div className="container-fluid banner-container--header-am2">
@@ -39,11 +35,10 @@ const Header = () => {
               </Link>
               <ul className="dropdown-menu">
                 {videos.map((video, index) => {
-                  return <>
-                    <li key={index + 1}>
+                  return (
+                    <li key={index.toString()}>
                       <Link className="dropdown-item" to={video[1]}>{index + 1}. {video[0]}</Link>
-                    </li>
-                  </>;
+                    </li>);
                 })}
               </ul>
             </li>
@@ -53,11 +48,10 @@ const Header = () => {
               </Link>
               <ul className="dropdown-menu">
                 {ejercicios.map((ejercicio, index) => {
-                  return <>
-                    <li key={index}>
+                  return (
+                    <li key={index.toString()}>
                       <Link className="dropdown-item" to={ejercicio[1]}>{ejercicio[0]}</Link>
-                    </li>
-                  </>;
+                    </li>);
                 })}
               </ul>
             </li>
