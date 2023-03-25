@@ -20,10 +20,10 @@
       // When the single page app is loaded further down in this file,
       // the correct url will be waiting in the browser's history for
       // the single page app to route accordingly.
+      console.log('IM IN INDEX');
       (function () {
         // Get the current location of the page
         const currentLocation = window.location;
-        console.log('IM IN INDEX');
 
         // Check if there is a redirect in the query string
         if (currentLocation.search[1] === '/') {
