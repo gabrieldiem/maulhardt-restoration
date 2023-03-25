@@ -19,7 +19,7 @@
         "dev-server": "sleep 5 && http-server ./dist-local -p 3000",
         "dev": "concurrently -c \"auto\" --kill-others --names \"WATCH,SERVER\" \"npm run dev-watch\" \"npm run dev-server\"",
         "build": "npm run clean && parcel build src/index.html src/404.html src/pages/analisis-2.html src/pages/analisis-3.html src/pages/matematica-discreta.html --public-url /maulhardt-restoration/",
-        "build-local": "npm run clean-local && parcel build src/index.html src/404.html src/pages/analisis-2.html src/pages/analisis-3.html src/pages/matematica-discreta.html --dist-dir dist-local",
+        "build-local": "npm run clean-local && parcel build src/index.html src/404.html src/pages/analisis-2.html src/pages/analisis-3.html src/pages/matematica-discreta.html --no-optimize --dist-dir dist-local",
         "serve-local": "npm run build-local && http-server ./dist-local -p 3000"
     },
     "devDependencies": {
