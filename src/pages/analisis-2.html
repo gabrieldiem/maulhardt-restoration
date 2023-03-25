@@ -22,6 +22,9 @@
       (function () {
         // Get the current location of the page
         const currentLocation = window.location;
+        console.log('IM IN AM2');
+        console.log(window.location);
+        console.log(window.location.search);
 
         // Check if there is a redirect in the query string
         if (currentLocation.search[1] === '/') {
@@ -30,6 +33,7 @@
             .slice(1)
             .split('&')
             .map(function (str) {
+              console.log(str);
               return str.replace(/~and~/g, '&');
             })
             .join('?');
