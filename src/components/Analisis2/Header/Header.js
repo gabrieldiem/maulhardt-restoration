@@ -25,7 +25,7 @@ const Header = () => {
         <div className="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
           <ul className="navbar-nav justify-content-center">
             <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" to={`${baseRelativePath}/${pageRedirector('analisis-2', window.location.href)}`}>
+              <Link className="nav-link" aria-current="page" to={`${baseRelativePath}/${pageRedirector('analisis-2', window.location.href)}`}>
                 INICIO
               </Link>
             </li>
@@ -56,7 +56,7 @@ const Header = () => {
               </ul>
             </li>
             <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" to="#">LIBRO DE VISITAS</Link>
+              <Link className="nav-link" aria-current="page" to="#">LIBRO DE VISITAS</Link>
             </li>
           </ul>
         </div>

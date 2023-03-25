@@ -14,6 +14,19 @@
   box-shadow: none;
 }
 
+.nav-link {
+  color: black;
+}
+
+.nav-link:hover {
+  color: rgb(113, 113, 113)
+}
+
+.nav-item {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 .inner-button--header-am2 {
   color: black;
   font-weight: 400 !important;

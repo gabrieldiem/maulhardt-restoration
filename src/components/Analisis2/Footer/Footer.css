@@ -1,0 +1,21 @@
+.container--footer-am2 {
+  text-align: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.hr--footer-am2 {
+  margin-top: 90px;
+  margin-bottom: 70px;
+  border-color: black;
+  border-width: 1px;
+  opacity: 100%;
+  width: 80vw;
+}
+
+.text--footer-am2 {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(122, 122, 122);
+  line-height: 21px;
+}
