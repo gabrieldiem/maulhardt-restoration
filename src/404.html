@@ -4,17 +4,22 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta name="title" content="Page not found">
-    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+    <meta name="title" content="Page not found" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico" />
 
     <title>Page not found</title>
+
+    <script>
+      sessionStorage.redirect = location.href;
+    </script>
+    <meta http-equiv="refresh" content="0;URL='/'" />
 
     <style>
       body {
         font-family: Helvetica, Arial sans-serif;
         background-color: rgb(233, 233, 233) !important;
       }
-      </style>
+    </style>
   </head>
   <body>
     <p>Redirecting...</p>
