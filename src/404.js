@@ -23,10 +23,10 @@ let currentPageState = null;
 // https://username.github.io/repo-name/?/one/two&a=b~and~c=d#qwe
 // Otherwise, leave pathSegmentsToKeep as 0.
 // Define the number of path segments to keep
-const pathSegmentsToKeep = (baseRelativePath === '') ? 0 : 1;
+// const pathSegmentsToKeep = (baseRelativePath === '') ? 0 : 1;
 
-// Get the current location of the page
-const currentLocation = window.location;
+// // Get the current location of the page
+// const currentLocation = window.location;
 
 pagesData.forEach(page => {
   if (currentURL.includes(`${baseRelativePath}/pages/${page}`)) {
@@ -36,17 +36,45 @@ pagesData.forEach(page => {
 
 if (currentPageState && currentPageState.isAPage) {
   // Build the new URL
-  let newUrl = currentLocation.protocol + '//';
-  newUrl += currentLocation.hostname;
-  if (currentLocation.port && currentLocation.port !== '') {
-    newUrl += ':' + currentLocation.port;
+  // let newUrl = currentLocation.protocol + '//';
+  // newUrl += currentLocation.hostname;
+  // if (currentLocation.port && currentLocation.port !== '') {
+  //   newUrl += ':' + currentLocation.port;
+  // }
+
+  // newUrl += '/' + currentLocation.pathname.split('/').slice(0, 1 + pathSegmentsToKeep)[pathSegmentsToKeep] + ((baseRelativePath === '') ? '' : '/') + `pages/${currentPageState.currentPage}.html` + '/?/';
+  // newUrl += currentLocation.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~').split(`${currentPageState.currentPage}/`)[1];
+  // console.log('NEW', newUrl);
+  // // Redirect the browser to the new URL
+  // currentLocation.replace(newUrl);
+
+  const fullHostname = (() => {
+    const currentLocation = window.location;
+
+    // Build the new URL
+    let newUrl = currentLocation.protocol + '//';
+    newUrl += currentLocation.hostname;
+    if (currentLocation.port && currentLocation.port !== '') {
+      newUrl += ':' + currentLocation.port;
+    }
+
+    return newUrl;
+  })();
+
+  let preciseEndpoint = window.location.href.split(`${fullHostname}${baseRelativePath}/pages/${currentPageState.currentPage}`)[1];
+
+  if (preciseEndpoint === null || preciseEndpoint === '' || preciseEndpoint === '/') {
+    preciseEndpoint = null;
   }
 
-  newUrl += '/' + currentLocation.pathname.split('/').slice(0, 1 + pathSegmentsToKeep)[pathSegmentsToKeep] + ((baseRelativePath === '') ? '' : '/') + `pages/${currentPageState.currentPage}.html` + '/?/';
-  newUrl += currentLocation.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~').split(`${currentPageState.currentPage}/`)[1];
-  console.log('NEW', newUrl);
-  // Redirect the browser to the new URL
-  currentLocation.replace(newUrl);
+  if (preciseEndpoint && preciseEndpoint.substring(0, 5) === '.html') {
+    preciseEndpoint = preciseEndpoint.split('.html')[1];
+  }
+
+  // document.cookie = 'sessionStorageSameSite=None;SameSite=None;Secure';
+  sessionStorage.setItem('redirect', JSON.stringify({ fullUrl: window.location.href, page: currentPageState.currentPage, endpoint: preciseEndpoint, baseRelativePath }));
+  console.log('In 404', sessionStorage.getItem('redirect'));
+  window.location.replace(`${baseRelativePath}/pages/${currentPageState.currentPage}.html`);
 } else {
   window.location.replace(`${baseRelativePath}/`);
 }
