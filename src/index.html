@@ -8,50 +8,15 @@
     <meta name="robots" content="max-image-preview:large" />
     <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico" />
 
-    <!-- Start Single Page Apps for GitHub Pages -->
     <script type="text/javascript">
       (function () {
         // document.cookie = 'sessionStorageSameSite=None;SameSite=None;Secure';
         const redirectState = JSON.parse(sessionStorage.getItem('redirect'));
-        if (redirectState /* && redirectState.fullUrl !== window.location.href */) {
-          // history.replaceState(null, null, redirect);
-          console.log('Redirecting...', redirectState);
+        if (redirectState) {
           window.location.replace(`${redirectState.baseRelativePath}/pages/${redirectState.page}`);
         }
       })();
-
-      // Single Page Apps for GitHub Pages
-      // MIT License
-      // https://github.com/rafgraph/spa-github-pages
-      // This script checks to see if a redirect is present in the query string,
-      // converts it back into the correct url and adds it to the
-      // browser's history using window.history.replaceState(...),
-      // which won't cause the browser to attempt to load the new url.
-      // When the single page app is loaded further down in this file,
-      // the correct url will be waiting in the browser's history for
-      // the single page app to route accordingly.
-      console.log('IM IN INDEX.html');
-      // (function () {
-      //   // Get the current location of the page
-      //   const currentLocation = window.location;
-
-      //   // Check if there is a redirect in the query string
-      //   if (currentLocation.search[1] === '/') {
-      //     // Decode the redirect in the query string and replace "~and~" with "&"
-      //     const decodedRedirect = currentLocation.search
-      //       .slice(1)
-      //       .split('&')
-      //       .map(function (str) {
-      //         return str.replace(/~and~/g, '&');
-      //       })
-      //       .join('?');
-
-      //     // Replace the current state in the browser history with the decoded redirect
-      //     window.history.replaceState(null, null, currentLocation.pathname.slice(0, -1) + decodedRedirect + currentLocation.hash);
-      //   }
-      // })();
     </script>
-    <!-- End Single Page Apps for GitHub Pages -->
   </head>
   <body>
     <div id="root"></div>

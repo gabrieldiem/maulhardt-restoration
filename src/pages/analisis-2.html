@@ -9,55 +9,19 @@
     <link rel="icon" type="image/x-icon" href="../assets/favicon/favicon-am2.jpg" />
 
     <script type="text/javascript">
-      // Single Page Apps for GitHub Pages
-      // MIT License
-      // https://github.com/rafgraph/spa-github-pages
-      // This script checks to see if a redirect is present in the query string,
-      // converts it back into the correct url and adds it to the
-      // browser's history using window.history.replaceState(...),
-      // which won't cause the browser to attempt to load the new url.
-      // When the single page app is loaded further down in this file,
-      // the correct url will be waiting in the browser's history for
-      // the single page app to route accordingly.
-      console.log('IM IN AM2');
       (function () {
-        document.cookie = 'sessionStorageSameSite=None;SameSite=None;Secure';
+        // document.cookie = 'sessionStorageSameSite=None;SameSite=None;Secure';
         const redirectState = JSON.parse(sessionStorage.getItem('redirect'));
         if (redirectState) {
-          // history.replaceState(null, null, redirect);
-          console.log('Redirecting...', redirectState);
           sessionStorage.removeItem('redirect');
 
           if (redirectState.endpoint) {
-            // window.location.replace(`/pages/${redirectState.page}/${redirectState.endpoint}`);
             window.history.replaceState(null, null, `${redirectState.baseRelativePath}/pages/${redirectState.page}${redirectState.endpoint}`);
           } else {
             window.location.replace(`${redirectState.baseRelativePath}/pages/${redirectState.page}/${redirectState.endpoint}`);
           }
         }
       })();
-      // (function () {
-      //   // Get the current location of the page
-      //   const currentLocation = window.location;
-      //   console.log(window.location);
-      //   console.log(window.location.search);
-
-      //   // Check if there is a redirect in the query string
-      //   if (currentLocation.search[1] === '/') {
-      //     // Decode the redirect in the query string and replace "~and~" with "&"
-      //     const decodedRedirect = currentLocation.search
-      //       .slice(1)
-      //       .split('&')
-      //       .map(function (str) {
-      //         console.log(str);
-      //         return str.replace(/~and~/g, '&');
-      //       })
-      //       .join('?');
-
-      //     // Replace the current state in the browser history with the decoded redirect
-      //     window.history.replaceState(null, null, currentLocation.pathname.slice(0, -1) + decodedRedirect + currentLocation.hash);
-      //   }
-      // })();
     </script>
   </head>
   <body>
