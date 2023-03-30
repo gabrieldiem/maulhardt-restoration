@@ -4,11 +4,11 @@ import Content from './Content/Content';
 import Footer from './Footer/Footer';
 
 const Analisis2 = () => {
-  return <div>
+  return <>
     <Header />
     <Content />
     <Footer />
-  </div>;
+  </>;
 };
 
 export default Analisis2;

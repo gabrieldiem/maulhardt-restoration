@@ -1,7 +1,23 @@
 import React from 'react';
 
+import Header from '../Header/Header';
+import ButtonBackToTop from '../ButtonBackToTop/ButtonBackToTop';
+import ContentEntry from '../ContentEntry/ContentEntry';
+import Footer from '../Footer/Footer';
+
+import { materialOficial } from '../../../data/analisis-2-data';
+
 const MaterialOficial = () => {
-  return <div>Esto es el material oficial</div>;
+  return <>
+    <Header />
+    <ButtonBackToTop />
+    {
+      materialOficial.map((entry, index) => {
+        return <ContentEntry entry={entry} key={index.toString()} />;
+      })
+    }
+    <Footer />
+  </>;
 };
 
 export default MaterialOficial;

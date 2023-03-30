@@ -1,0 +1,24 @@
+.btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 3px 3px 5px 3px;
+  width: 3rem !important;
+  height: 3rem;
+}
+
+.btn-back-to-top img {
+  height: 2rem !important;
+}
+
+.btn-back-to-top-hidden {
+  display: none !important;
+}
+
+.btn-back-to-top-visible {
+  display: block !important;
+}
+
+@media only screen and (max-width: 768px) {
+  
+}

@@ -9,7 +9,7 @@ import analisis2Banner from '../../../assets/analisis2/analisis2_banner.jpg';
 import { videos, ejercicios } from '../../../data/analisis-2-data';
 
 const Header = () => {
-  return <>
+  return <header>
     <div className="container-fluid banner-container--header-am2">
       <Link className="navbar-brand" to={`${baseRelativePath}/${pageRedirector('analisis-2', window.location.href)}`}><img src={analisis2Banner} /></Link>
     </div>
@@ -63,7 +63,7 @@ const Header = () => {
       </div>
     </nav>
     <hr className="hr--header-am2" />
-  </>;
+  </header>;
 };
 
 export default Header;
