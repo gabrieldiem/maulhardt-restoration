@@ -9,23 +9,57 @@ const videoCap2 = [
   ['Continuidad. Curvas.', 'T0YgJ38UhOQ', 'El concepto de continuidad de funciones de varias variables y el de curva como imagen de un intervalo a través de una función continua se explican en este video con una interpretación geométrica del parámetro en cuestión sin desperdicio.']
 ];
 
-const videoCap3 = [];
+const videoCap3 = [
+  ['Curvas. Vector tangente.', 'w7sBvXDn5NA', 'En este video definimos el vector tangente a una curva tanto en el plano como en el espacio y lo utilizamos para definir la recta tangente. También tenemos interpretaciones física como posición y velocidad que sin duda serán interesantes a lo largo de tu carrera. Se presenta también una curva en el espacio como intersección de dos superficies.'],
+  ['Derivadas parciales y direccionales', '56OmBqc1gQE', 'La generalización del concepto de derivada para funciones de más de una variables se presenta en este video con interpretaciones geométricas increíbles y con movimientos que sencillamente no son posibles a través de una hoja de papel. A lo largo de todo el video se realizan ejemplos y se resuelven ejercicios que tranquilamente pueden formar parte de un examen. Este es un video fundamental.'],
+  ['Diferenciabilidad - Plano tangente.', 'IlwYzexCi88', '¡Cuidado! Este es un concepto difícil. Y los conceptos más difíciles necesitan las mejores explicaciones, las mejores síntesis, los mejores gráficos. Por eso, en exclusiva para la FIUBA, tenemos este video en el cual tratamos uno de los conceptos más importantes de las funciones de varias variables.'],
+  ['Superficies. Forma paramétrica.', 'lft52DBQ19s', 'De la misma manera en que hemos introducido el concepto de curva como imagen de un intervalo (conexo) a través de una función continua tenemos ahora el concepto análogo de superficie. Estudiamos, con movimientos nunca antes vistos, conceptos como regularidad, plano tangente, recta normal, etc.']
+];
 
-const videoCap4 = [];
+const videoCap4 = [
+  ['Regla de la cadena', 'WejRA_qOndQ', 'En este primer video de la unidad realizamos un repaso sobre composición de funciones para pasar luego a la regla de la cadena de varias variables. Tanto a través de la matriz derivada como por el método del "arbolito", este video recorre los casos más importantes de la derivación funciones que quedan definidas como composición de otras.'],
+  ['Teorema de la función implícita (I)', 'sq3jJqaX87c', 'En este original video, que trata especialmente los casos más usuales en los exámenes, presentamos el concepto de función definida implícitamente tanto por una ecuación como por un sistema de ecuaciones. Con interpretaciones geométricas cuidadosamente seleccionadas, este video constituye un recurso fundamental en nuestro estudio de este importante concepto.'],
+  ['Teorema de la función implícita (II)', 'RgfQCra8yOs', 'El caso del teorema de la función implícita en el cual hay más de una ecuación merece especial atención y por eso tenemos este video que trata especialmente el caso de dos ecuaciones con tres incógnitas y el de dos ecuaciones con cuatro incógnitas. Los temas de este video suelen aparecer en los exámenes.']
+];
 
-const videoCap5 = [];
+const videoCap5 = [
+  ['Polinomio de Taylor', 'gEQiGR7y-Oo', 'En este video presentamos el análogo del polinomio de Taylor de una función de una variable para el caso de dos o más variables. Una interpretación geométrica interesante no dejará dudas de lo que este polinomio representa.'],
+  ['Extremos locales', 'uoFD26TfZd4', 'Con interpretaciones geométricas que explican la definición, y con ejemplos y ejercicios de problemas tomados en exámenes este video trata pedagógicamente el importante concepto de extremo local de una función escalar de más de una variable.'],
+  ['Teorema de Weierstrass', '3FfhEi2nn_c', 'Si hay algún matemático que se ha dedicado al análisis puro, ese matemático es Karl Weierstrass. Entre sus numerosas contribuciones ha probado que una función continua definida en un conjunto compacto alcanza sus valores máximo y mínimos absolutos. Éste y otros conceptos, como el de extremos ligados, se tratan en este video de extrema importancia para tu carrera de ingeniería.']
+];
 
-const videoCap6 = [];
+const videoCap6 = [
+  ['Concepto de ecuación diferencial', 'fc54hjCK6KM', '¡Este es un tema fascinante! En este video introducimos el concepto de ecuación diferencial, de orden, de solución general y particular, de ecuación de variables separables, etc. etc. etc.'],
+  ['Trayectorias ortogonales', 'HtYZW8rYzQ0', 'El concepto de haz de curvas nos conduce a la formación de la ecuación diferencial del haz dado. Junto con el concepto de trayectorias ortogonales presentamos y resolvemos la ecuación diferencial lineal de primer orden.']
+];
 
-const videoCap7 = [];
+const videoCap7 = [
+  ['Integrales de línea de campos escalares', 'X2pYXeSdFIQ', 'En este video se definen con lujo de detalles conceptos como el de longitud de una curva, abscisa curvilínea, integral de línea de campo escalar y sus aplicaciones más inmediatas a la física. '],
+  ['Campos vectoriales - Circulación', 'G68rZeEkJUo', 'En este video presentamos el concepto de integral de línea de campo vectorial con interesantes interpretaciones físicas y con varios ejemplos que nos ayudan a entender este importantísimo concepto. '],
+  ['Función potencial. Campos de gradientes.', 'yLiverpKiY8', 'En este video definimos un importante tipo de campos vectoriales, a saber: el campo de gradientes. Las integrales de línea de estos campos no dependen de la curva que se utilice para calcularla. Solo depende de los puntos inicial y final de la misma. Este y otros conceptos junto con varios teoremas son estudiados como nunca en este video completísimo. Este es un video fundamental.']
+];
 
-const videoCap8 = [];
+const videoCap8 = [
+  ['Integrales dobles', 'W0-3hVOB5zU', 'El concepto de integral doble tiene numerosas aplicaciones a la física y a la ingeniería. Luego de una introducción rigurosa del tema pasamos al cálculo de estas integrales, cálculo que suele hacerse con ayuda del teorema de Fubini.'],
+  ['Cambio de variables en integrales dobles', '7gZqZYd_S1k', 'En este video estudiamos el teorema del cambio de variables en integrales dobles con especial énfasis en el cambio definido por una transformación lineal. Estudiamos también el cambio de coordenadas cartesianas a polares y a elípticas. '],
+  ['Integrales triples', 'RWvZx5Goles', 'Este análogo teórico de las integrales dobles no presenta mayores dificultades. Pero la práctica puede resultar más difícil porque los dominios de integración ya no están en el plano sino en el espacio. Por eso en este video tratamos este tema con gráficos especialmente creados para arrojar luz sobre estos lugares oscuros.'],
+  ['Cambio de variables en integrales triples', 'HgpTRbUo8I8', 'En este video presentamos el teorema del cambio de variables en integrales triples al tiempo que introducimos los sistema de coordenadas esféricas y cilíndricas. ']
+];
 
-const videoCap9 = [];
+const videoCap9 = [
+  ['Integrales de superficie - Flujo', 'CU0NAZY-Lgs', '¡Dos videos en uno! En este video, que tal vez te convenga ver en dos partes, definimos integral de superficie de campo escalar y de campo vectorial. Introducimos también el concepto de orientación de una superficie y de flujo de un campo vectorial a través de ella. Este es un video fundamental.']
+];
 
-const videoCap10 = [];
+const videoCap10 = [
+  ['Teorema de Gauss', 'ESaoNcVC_so', 'El teorema de la divergencia es tratado en este video con numerosos ejemplos y ejercicios que arrojan luz sobre el importante significado de la igualdad que se presenta en dicho teorema. Damos también una aplicación del teorema al concepto de línea de campo.'],
+  ['Teorema de Green', 'u9MEQvff_IM', 'En este video estudiamos el teorema de Green tanto para dominios simplemente conexos como múltiplemente conexos. Con varios ejercicios que ilustran este importante teorema este video constituye una ayuda fundamental en el estudio de esta unidad.'],
+  ['Teorema de Stokes', 'EaRYnLnnUys', 'El importantísimo teorema del rotor que en muchas ocasiones permite calcular una circulación de un campo a lo largo de una curva contenida en el espacio se estudia en este video fundamental. Con todas las cuentas hechas este video constituye una ayuda fundamental para completar los ejercicios de la guía.'],
+  ['Existencia de la función potencial', 'dUyf2byd-jM', 'En este video, que cierra un tema abierto en la unidad siete, estudiamos la existencia de función potencial cuando el dominio del campo no es simplemente conexo. Con un famoso contraejemplo y con la ayuda de los teoremas integrales podremos, por fin, dar una respuesta completa.']
+];
 
-const videoCap11 = [];
+const videoCap11 = [
+  ['Ecuación homogénea y total exacta', '5dteSqfO9vU', 'En este video de despedida estudiamos las ecuaciones diferenciales homogéneas de primer orden y la ecuación diferencial total exacta. Repasamos también conceptos estudiados en la unidad 6. ¡Adiós!']
+];
 
 const videos = [
   ['GEOMETRÍA DEL PLANO Y DEL ESPACIO', 'cap-1-geometria-del-plano-y-del-espacio', videoCap1],
