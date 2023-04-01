@@ -37,7 +37,7 @@ const Header = () => {
                 {videos.map((video, index) => {
                   return (
                     <li key={index.toString()}>
-                      <Link className="dropdown-item" to={video[1]}>{index + 1}. {video[0]}</Link>
+                      <Link className="dropdown-item" to={`${baseRelativePath}/${pageRedirector('analisis-2', window.location.href)}/video/${video[1]}`}>{index + 1}. {video[0]}</Link>
                     </li>);
                 })}
               </ul>

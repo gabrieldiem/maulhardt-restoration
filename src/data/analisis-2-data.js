@@ -1,15 +1,44 @@
+const videoCap1 = [
+  ['Primer video: cuádricas', 'PjAdWnOGksU', 'En este primer video de la materia estudiamos, dando una definición algebraica, todas las cuádricas que precisamos para nuestro curso. Con movimientos e interpretaciones geométricas clarísimas, este material adelanta varios de los temas y conceptos que trataremos más adelante en varias unidades. Tal vez, si te cansás dada la extensión del video, te convenga verlo en dos partes. Es otra de las ventajas que tiene este tipo de materiales.'],
+  ['Topología del plano y del espacio', 'T7jgaTIgU0o', 'En este video presentamos varias nociones topológicas de los espacios en los cuales trabajaremos a lo largo de la materia. Nociones como las de conjunto abierto, cerrado, acotado, compacto, conexo, etc. son tratadas con gráficos y movimientos que te ayudarán a entender más fácil otros conceptos como el de límite, frontera, borde, etc.']
+];
+
+const videoCap2 = [
+  ['Funciones. Conjuntos de nivel.', 'edBwOPBE5Sk', 'En este importante video definimos el concepto de conjunto de nivel de una función escalar de varias variables y el concepto de gráfica de una función. Este es un video fundamental para ingresar con el pie derecho en la materia.'],
+  ['Límites', 'CwYM9fRy5MU', 'No hace falta decir que este concepto es uno de los más importantes del análisis matemático. Con movimientos e interpretaciones geométricas clarísimas, y con ejemplos que ilustran la teoría, este video es uno de los más importantes de la unidad.'],
+  ['Continuidad. Curvas.', 'T0YgJ38UhOQ', 'El concepto de continuidad de funciones de varias variables y el de curva como imagen de un intervalo a través de una función continua se explican en este video con una interpretación geométrica del parámetro en cuestión sin desperdicio.']
+];
+
+const videoCap3 = [];
+
+const videoCap4 = [];
+
+const videoCap5 = [];
+
+const videoCap6 = [];
+
+const videoCap7 = [];
+
+const videoCap8 = [];
+
+const videoCap9 = [];
+
+const videoCap10 = [];
+
+const videoCap11 = [];
+
 const videos = [
-  ['GEOMETRÍA DEL PLANO Y DEL ESPACIO', 'www.google.com'],
-  ['FUNCIONES. LÍMITES. CONTINUIDAD', 'www.google.com'],
-  ['DIFERENCIABILIDAD. SUPERFICIES', 'www.google.com'],
-  ['FUNCIONES COMPUESTAS E IMPLÍCITAS', 'www.google.com'],
-  ['POLINOMIO DE TAYLOR. EXTREMOS', 'www.google.com'],
-  ['ECUACIONES DIFERENCIALES', 'www.google.com'],
-  ['INTEGRALES CURVILINEAS', 'www.google.com'],
-  ['INTEGRALES MULTIPLES', 'www.google.com'],
-  ['INTEGRALES DE SUPERFICIE - FLUJO', 'www.google.com'],
-  ['TEOREMAS INTEGRALES', 'www.google.com'],
-  ['ECUACIONES DIFERENCIALES (II)', 'www.google.com']
+  ['GEOMETRÍA DEL PLANO Y DEL ESPACIO', 'cap-1-geometria-del-plano-y-del-espacio', videoCap1],
+  ['FUNCIONES. LÍMITES. CONTINUIDAD', 'cap-2-funciones-limites-continuidad', videoCap2],
+  ['DIFERENCIABILIDAD. SUPERFICIES', 'cap-3-diferenciabilidad-superficies', videoCap3],
+  ['FUNCIONES COMPUESTAS E IMPLÍCITAS', 'cap-4-funciones-compuestas-e-implicitas', videoCap4],
+  ['POLINOMIO DE TAYLOR. EXTREMOS', 'cap-5-polinomio-de-taylor-extremos', videoCap5],
+  ['ECUACIONES DIFERENCIALES', 'cap-6-ecuaciones-diferenciales', videoCap6],
+  ['INTEGRALES CURVILINEAS', 'cap-7-integrales-curvilineas', videoCap7],
+  ['INTEGRALES MULTIPLES', 'cap-8-integrales-multiples', videoCap8],
+  ['INTEGRALES DE SUPERFICIE - FLUJO', 'cap-9-integrales-de-superficie-flujo', videoCap9],
+  ['TEOREMAS INTEGRALES', 'cap-10-teoremas-integrales', videoCap10],
+  ['ECUACIONES DIFERENCIALES (II)', 'cap-11-ecuaiones-diferenciales-2', videoCap11]
 ];
 
 const ejercicios = [
