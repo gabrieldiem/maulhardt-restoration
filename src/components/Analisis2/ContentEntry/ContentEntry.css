@@ -22,9 +22,9 @@
   font-size: 20px;
   margin-top: 10px;
   margin-bottom: 10px;
-  font-weight: 400;
-  line-height: 32px;
-  color: rgb(81, 81, 81);
+  font-weight: 300;
+  line-height: 22px;
+  color: rgb(0, 0, 0);
   margin-left: max(10px ,3vw);
   margin-right: max(10px, 3vw);
 }

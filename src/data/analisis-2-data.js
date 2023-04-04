@@ -75,6 +75,20 @@ const videos = [
   ['ECUACIONES DIFERENCIALES (II)', 'cap-11-ecuaiones-diferenciales-2', videoCap11]
 ];
 
+const brokenVideoThumbnails = [
+  ['PjAdWnOGksU', 'sddefault.jpg'],
+  ['X2pYXeSdFIQ', 'hqdefault.jpg'],
+  ['G68rZeEkJUo', 'sddefault.jpg'],
+  ['W0-3hVOB5zU', 'sddefault.jpg'],
+  ['7gZqZYd_S1k', 'sddefault.jpg'],
+  ['HgpTRbUo8I8', 'sddefault.jpg'],
+  ['CU0NAZY-Lgs', 'sddefault.jpg'],
+  ['ESaoNcVC_so', 'sddefault.jpg'],
+  ['u9MEQvff_IM', 'sddefault.jpg'],
+  ['dUyf2byd-jM', 'sddefault.jpg'],
+  ['5dteSqfO9vU', 'sddefault.jpg']
+];
+
 const ejercicios = [
   ['EJERCICIOS UNIDADES 1-5', 'www.google.com'],
   ['EJERCICIOS UNIDADES 6-11', 'www.google.com']
@@ -98,4 +112,4 @@ const materialOficial = [
   ['Teorema de Gauss', 'dcesUjJJD18', 'Algunas veces se puede ver a Lionel Messi jugar al fútbol, a Guillermo Vilas hacer una gran Willy o a Fernando Acero aplicar el teorema de Gauss. En este video Fernando nos explica cómo aplicar el teorema de la divergencia para calcular el flujo a través de una superficie, aún si ésta es abierta. Este es un video fundamental.']
 ];
 
-export { videos, ejercicios, secciones, materialOficial };
+export { videos, ejercicios, secciones, materialOficial, brokenVideoThumbnails };

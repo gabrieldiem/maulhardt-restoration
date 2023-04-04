@@ -35,9 +35,11 @@ const Header = () => {
               </Link>
               <ul className="dropdown-menu">
                 {videos.map((video, index) => {
+                  const desiredPath = `${baseRelativePath}/${pageRedirector('analisis-2', window.location.href)}/video/${video[1]}`;
+                  const isActive = desiredPath === window.location.pathname;
                   return (
                     <li key={index.toString()}>
-                      <Link className="dropdown-item" to={`${baseRelativePath}/${pageRedirector('analisis-2', window.location.href)}/video/${video[1]}`}>{index + 1}. {video[0]}</Link>
+                      <Link className={`dropdown-item ${isActive ? 'active' : ''}`} to={desiredPath}>{index + 1}. {video[0]}</Link>
                     </li>);
                 })}
               </ul>
