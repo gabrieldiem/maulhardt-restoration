@@ -19,3 +19,27 @@
   color: rgb(122, 122, 122);
   line-height: 21px;
 }
+
+.text--footer-am2 a {
+  text-decoration: none;
+  color: black;
+  display: inline-flex;
+  align-items: center;
+  vertical-align: bottom;
+}
+
+.text--footer-am2 a:hover {
+  text-decoration: none;
+  color: rgb(63, 63, 63);
+}
+
+.text--footer-am2 a img {
+  height: 16px;
+  margin-right: 3px;
+}
+
+.text--footer-am2 a:hover img {
+  height: 16px;
+  margin-right: 3px;
+  opacity: 80%;
+}
