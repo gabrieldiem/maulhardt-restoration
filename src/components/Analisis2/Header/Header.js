@@ -11,7 +11,7 @@ import { videos, ejercicios } from '../../../data/analisis-2-data';
 const Header = () => {
   return <header>
     <div className="container-fluid banner-container--header-am2">
-      <Link className="navbar-brand" to={`${baseRelativePath}/${pageRedirector('analisis-2', window.location.href)}`}><img src={analisis2Banner} /></Link>
+      <Link className="navbar-brand" to={`${baseRelativePath}/${pageRedirector('analisis-2', window.location.href)}`}><img src={analisis2Banner} alt="Logo de la página que dice Análisis Matemático 2"/></Link>
     </div>
     <hr className="hr--header-am2" />
     <nav className="navbar--header-am2 navbar navbar-expand-lg justify-content-center">

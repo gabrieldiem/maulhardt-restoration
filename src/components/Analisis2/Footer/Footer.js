@@ -13,7 +13,7 @@ const Footer = () => {
       © Copyright {currentYear}. Facultad de Ingeniería - Universidad de Buenos Aires.
       </h5>
       <h5 className="text--footer-am2">
-        <a href="https://github.com/gabrieldiem/maulhardt-restoration" target="_blank" rel="noreferrer"> <img src={githubLogo} /> Source</a>. Reconstruido con ♥ por <a href="https://github.com/gabrieldiem" target="_blank" rel="noreferrer">@gabrieldiem</a>.
+        <a href="https://github.com/gabrieldiem/maulhardt-restoration" target="_blank" rel="noreferrer"> <img src={githubLogo} alt="Logo de GitHub" /> Source</a>. Reconstruido con ♥ por <a href="https://github.com/gabrieldiem" target="_blank" rel="noreferrer">@gabrieldiem</a>.
       </h5>
     </div>
   </div>;

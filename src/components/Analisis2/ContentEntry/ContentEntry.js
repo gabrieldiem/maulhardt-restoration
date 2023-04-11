@@ -11,7 +11,7 @@ const ContentEntry = ({ entry }) => {
     <p className="text--content-entry-am2">{text}</p>
     <div className="container-fluid container-image--content-entry-am2">
       <a href={youtubeVideoShortEndpoint(videoID)} target="_blank" rel="noreferrer">
-        <img className="image--content-entry-am2" src={youtubeThumbnailMaxResEndpoint(videoID)}/>
+        <img className="image--content-entry-am2" src={youtubeThumbnailMaxResEndpoint(videoID)} alt="Imagen y link al video de Youtube de este tema"/>
       </a>
     </div>
   </section>;
