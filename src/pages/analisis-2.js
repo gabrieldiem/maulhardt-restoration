@@ -9,11 +9,10 @@ import '../index.css';
 import baseRelativePath from '../path';
 import pageRedirector from '../redirector';
 import Analisis2 from '../components/Analisis2/Analisis2';
-import MaterialOficial from '../components/Analisis2/MaterialOficial/MaterialOficial';
 import Redir from '../components/Analisis2/Redir/Redir';
 import ScrollToTop from '../components/Analisis2/ScrollToTop/ScrollToTop';
 import VideoPage from '../components/Analisis2/VideoPage/VideoPage';
-import { videos } from '../data/analisis-2-data';
+import PracticePage from '../components/Analisis2/PracticePage/PracticePage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -25,13 +24,6 @@ root.render(
       <Route path={`${baseRelativePath}/${pageRedirector('analisis-2', window.location.href)}`} element={<>
         <ScrollToTop />
         <Analisis2 />
-      </>} />
-
-      {/* Material Oficial Page */}
-
-      <Route path={`${baseRelativePath}/pages/analisis-2/material-oficial`} element={<>
-        <ScrollToTop />
-        <MaterialOficial />
       </>} />
 
       <Route path={`${baseRelativePath}/pages/analisis-2.html/material-oficial`} element={<>
@@ -47,6 +39,17 @@ root.render(
 
       <Route path={`${baseRelativePath}/pages/analisis-2.html/video/:videoRelativePath`} element={<>
         <Redir dest={`${baseRelativePath}/pages/analisis-2/video/:videoRelativePath`} />
+      </>} />
+
+      {/* Ejercicios */}
+
+      <Route path={`${baseRelativePath}/pages/analisis-2/ejercicios/:practiceRelativePath`} element={<>
+        <ScrollToTop />
+        <PracticePage />
+      </>} />
+
+      <Route path={`${baseRelativePath}/pages/analisis-2.html/ejercicios/:practiceRelativePath`} element={<>
+        <Redir dest={`${baseRelativePath}/pages/analisis-2/ejercicios/:practiceRelativePath`} />
       </>} />
 
       {/* Catch-all in case something goes wrong */}
