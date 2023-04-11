@@ -15,7 +15,7 @@ function sizeOfAvailableThumbnail (videoID) {
 }
 
 function youtubeThumbnailMaxResEndpoint (videoID) {
-  const firstPathPart = 'http://img.youtube.com/vi';
+  const firstPathPart = 'https://img.youtube.com/vi';
 
   const secondtPathPart = sizeOfAvailableThumbnail(videoID);
 
