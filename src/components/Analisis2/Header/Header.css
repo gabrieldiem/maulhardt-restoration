@@ -48,7 +48,7 @@
   word-spacing: 2px;
 }
 
-.navbar--header-am2 .dropdown-menu .dropdown-item:hover {
+.navbar--header-am2 .dropdown-menu .dropdown-item:hover, .dropdown-item:active {
   padding-top: 7px;
   padding-bottom: 7px;
   word-spacing: 2px;
