@@ -5,10 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Maulhardt Restoration</title>
+    <meta name="robots" content="index, follow">
     <meta name="robots" content="max-image-preview:large" />
     <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico" />
 
+    <meta name="description" content="Restauración de las páginas analisis2.com, analisis3.com y matematicadiscreta.com de Maulhardt.">
+
+    <meta property="og:title" content="Maulhardt Restoration"/>
+    <meta property="og:description" content="Restauración de las páginas analisis2.com, analisis3.com y matematicadiscreta.com de Maulhardt."/>
+    <meta property="og:image" content="assets/favicon/favicon.ico"/>
+    <meta property="og:type" content="website"/>
+    <meta name="keywords" content="maulhardt, analisis 2, matematica discreta, FIUBA, analisis 3">
+    
+
     <script type="text/javascript">
+      // IIFE to redirect based on the last location saved in sessionStorage
       (function () {
         const redirectState = JSON.parse(sessionStorage.getItem('redirect'));
         if (redirectState) {
