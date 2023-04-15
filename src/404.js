@@ -34,7 +34,6 @@ if (currentPageState && currentPageState.isAPage) {
     preciseEndpoint = preciseEndpoint.split('.html')[1];
   }
 
-  // document.cookie = 'sessionStorageSameSite=None;SameSite=None;Secure';
   sessionStorage.setItem('redirect', JSON.stringify({ fullUrl: window.location.href, page: currentPageState.currentPage, endpoint: preciseEndpoint, baseRelativePath }));
   window.location.replace(`${baseRelativePath}/pages/${currentPageState.currentPage}.html`);
 } else {

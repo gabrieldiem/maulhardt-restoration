@@ -1,7 +1,7 @@
 {
     "homepage": "http://gabrieldiem.github.io/maulhardt-restoration",
     "name": "maulhardt-restoration",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "private": true,
     "dependencies": {
         "bootstrap": "^5.2.3",
@@ -10,7 +10,7 @@
         "popper.js": "^1.16.1",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
-        "react-router-dom": "^6.8.0"
+        "react-router-dom": "^6.10.0"
     },
     "scripts": {
         "clean": "rm -rf ./dist && echo 'Cleaned old dist directory'",
@@ -26,10 +26,12 @@
         "@parcel/packager-raw-url": "^2.8.2",
         "@parcel/transformer-sass": "^2.8.2",
         "@parcel/transformer-webmanifest": "^2.8.2",
-        "eslint": "^8.33.0",
+        "concurrently": "^8.0.1",
+        "eslint": "^8.38.0",
         "eslint-config-standard": "^17.0.0",
         "eslint-plugin-html": "^7.1.0",
         "eslint-plugin-react": "^7.32.2",
+        "http-server": "^14.1.1",
         "os-browserify": "^0.3.0",
         "path-browserify": "^1.0.1",
         "process": "^0.11.10"

@@ -10,7 +10,6 @@
 
     <script type="text/javascript">
       (function () {
-        // document.cookie = 'sessionStorageSameSite=None;SameSite=None;Secure';
         const redirectState = JSON.parse(sessionStorage.getItem('redirect'));
         if (redirectState) {
           window.location.replace(`${redirectState.baseRelativePath}/pages/${redirectState.page}`);
