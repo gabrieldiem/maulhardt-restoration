@@ -26,6 +26,9 @@ The project is made with this core technologies, which will be installed locally
 | popper.js        | 1.16.1  |
 | dotenv           | 16.0.3  |
 
+## Content Attribution
+
+All of the content on this website is derived from the original websites _analisis2.com_, _analisis3.com_ and _matematicadiscreta.com_. We acknowledge and respect their intellectual property rights. All original content remains the property of their respective owners Martín Maulhardt and the Faculty of Engineering of the University of Buenos Aires (FIUBA).
 
 ## Useful resources
 
